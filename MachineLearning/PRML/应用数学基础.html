@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>yutingL</title>
+        <meta charset="utf-8" />
+
+
+
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="/theme/js/ie/html5shiv.js"></script><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" href="/theme/css/ie8.css" /><![endif]-->
+</head>
+
+<body>
+        <header id="banner" class="body">
+                <h1><a href="http://justbabm.github.io/">yutingL <strong></strong></a></h1>
+        </header><!-- /#banner -->
+<!-- Sidebar -->
+            <div id="sidebar">
+
+                <!-- Logo -->
+                    <h1 id="logo"><a href="/">yutingL</a></h1>
+                    <!-- Text -->
+                    <section class="box text-style1">
+                        <div class="inner">
+                            <p>
+                                <strong>Talk is cheap, show me the code.</strong><br />
+                            </p>
+                        </div>
+                    </section>
+                <!-- Nav -->
+                    <nav id="nav">
+                        <ul>
+                            
+                            <li><a href="http://justbabm.github.io/MachineLearning/MachineLearningContent.html"">Machine learning</a></li>
+                            <li><a href="http://justbabm.github.io/DeepLearning/DeepLearningContent.html">Deep learning</a></li>
+			    <li><a href="http://justbabm.github.io/Info/Aboutme.html">About me</a></li>
+                        </ul>
+                    </nav>
+
+                <!-- Search -->
+                    <!-- <section class="box search">
+                        <form method="post" action="#">
+                            <input type="text" class="text" name="search" placeholder="Search" />
+                        </form>
+                    </section> -->
+
+                
+
+                <!-- Recent Posts -->
+                    <section class="box recent-posts">
+                        <header>
+                            <h2>Contact Me</h2>
+                        </header>
+                        <ul>
+                            <li><a class="icon fa-envelope" href="mailto:justbabm@gmail.com"> eMail</a></li>
+                            <!-- <li><a class="icon fa-twitter" href="#"> Twitter</a></li>
+                            <li><a class="icon fa-facebook" href="#"> Facebook</a></li>-->
+                            <li><a class="icon fa-github" href="https://github.com/justbabm/"> Github</a></li>
+                            
+                        </ul>
+                    </section>
+
+
+
+               <!-- Copyright -->
+                  <!--   <ul id="copyright">
+                        <li>Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.</li>
+                        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                        <li>Modified under a <a href="https://creativecommons.org/licenses/by/3.0/">CC:BY</a> license.</li>
+                    </ul>-->
+
+            </div><!-- /#menu -->
+<div id="content">
+<div class="inner">
+        <article class="box post post-excerpt">
+                <header> 
+                <h2><a href="http://justbabm.github.io/MachineLearning/PRML/应用数学基础.html" rel="bookmark" title="Permalink to 二、应用数学基础">二、应用数学基础</a></h2> 
+                <p>Author: yutingL &nbsp;&nbsp; Tags: Machine Learning/PRML</p>
+                </header>
+                <div class="info">
+                    <span class="date" datetime="2017-11-11T00:00:00+00:00"><span class="month">11月</span> <span class="day">11</span> <span class="month"> 2017</span></span>
+                    <ul class="stats">
+                                    <li><a href="mailto:justbabm@gamil.com?Subject=二、应用数学基础&Body=I%20saw%20this%20and%20thought%20of%20you!%20 http://justbabm.github.io/MachineLearning/PRML/应用数学基础.html" class="icon fa-envelope">&nbsp;</a></li>
+                                    <!--<li><a href="http://reddit.com/submit?url=http://justbabm.github.io/MachineLearning/PRML/应用数学基础.html&title=#二、应用数学基础"" class="icon fa-reddit">&nbsp;</a></li>
+                                    <li><a href="https://twitter.com/share?url=http://justbabm.github.io/MachineLearning/PRML/应用数学基础.html&text=&hashtags=GnotC" class="icon fa-twitter">&nbsp;</a></li>
+                                    <li><a href="https://www.facebook.com/sharer.php?u=http://justbabm.github.io/MachineLearning/PRML/应用数学基础.html" class="icon fa-facebook">&nbsp;</a></li>-->
+                                </ul>
+                </div><!-- /.post-info -->
+                <!--<div class="entry-content">&nbsp;</div>--><!-- /.entry-content -->
+        </article>
+    <style type="text/css">/*!
+*
+* IPython notebook
+*
+*/
+/* CSS font colors for translated ANSI colors. */
+.ansibold {
+  font-weight: bold;
+}
+/* use dark versions for foreground, to improve visibility */
+.ansiblack {
+  color: black;
+}
+.ansired {
+  color: darkred;
+}
+.ansigreen {
+  color: darkgreen;
+}
+.ansiyellow {
+  color: #c4a000;
+}
+.ansiblue {
+  color: darkblue;
+}
+.ansipurple {
+  color: darkviolet;
+}
+.ansicyan {
+  color: steelblue;
+}
+.ansigray {
+  color: gray;
+}
+/* and light for background, for the same reason */
+.ansibgblack {
+  background-color: black;
+}
+.ansibgred {
+  background-color: red;
+}
+.ansibggreen {
+  background-color: green;
+}
+.ansibgyellow {
+  background-color: yellow;
+}
+.ansibgblue {
+  background-color: blue;
+}
+.ansibgpurple {
+  background-color: magenta;
+}
+.ansibgcyan {
+  background-color: cyan;
+}
+.ansibggray {
+  background-color: gray;
+}
+div.cell {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-radius: 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  width: 100%;
+  padding: 5px;
+  /* This acts as a spacer between cells, that is outside the border */
+  margin: 0px;
+  outline: none;
+  border-left-width: 1px;
+  padding-left: 5px;
+  background: linear-gradient(to right, transparent -40px, transparent 1px, transparent 1px, transparent 100%);
+}
+div.cell.jupyter-soft-selected {
+  border-left-color: #90CAF9;
+  border-left-color: #E3F2FD;
+  border-left-width: 1px;
+  padding-left: 5px;
+  border-right-color: #E3F2FD;
+  border-right-width: 1px;
+  background: #E3F2FD;
+}
+@media print {
+  div.cell.jupyter-soft-selected {
+    border-color: transparent;
+  }
+}
+div.cell.selected {
+  border-color: #ababab;
+  border-left-width: 0px;
+  padding-left: 6px;
+  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 5px, transparent 5px, transparent 100%);
+}
+@media print {
+  div.cell.selected {
+    border-color: transparent;
+  }
+}
+div.cell.selected.jupyter-soft-selected {
+  border-left-width: 0;
+  padding-left: 6px;
+  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 7px, #E3F2FD 7px, #E3F2FD 100%);
+}
+.edit_mode div.cell.selected {
+  border-color: #66BB6A;
+  border-left-width: 0px;
+  padding-left: 6px;
+  background: linear-gradient(to right, #66BB6A -40px, #66BB6A 5px, transparent 5px, transparent 100%);
+}
+@media print {
+  .edit_mode div.cell.selected {
+    border-color: transparent;
+  }
+}
+.prompt {
+  /* This needs to be wide enough for 3 digit prompt numbers: In[100]: */
+  min-width: 14ex;
+  /* This padding is tuned to match the padding on the CodeMirror editor. */
+  padding: 0.4em;
+  margin: 0px;
+  font-family: monospace;
+  text-align: right;
+  /* This has to match that of the the CodeMirror class line-height below */
+  line-height: 1.21429em;
+  /* Don't highlight prompt number selection */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Use default cursor */
+  cursor: default;
+}
+@media (max-width: 540px) {
+  .prompt {
+    text-align: left;
+  }
+}
+div.inner_cell {
+  min-width: 0;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /* Old browsers */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  /* Modern browsers */
+  flex: 1;
+}
+/* input_area and input_prompt must match in top border and margin for alignment */
+div.input_area {
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
+  background: #f7f7f7;
+  line-height: 1.21429em;
+}
+/* This is needed so that empty prompt areas can collapse to zero height when there
+   is no content in the output_subarea and the prompt. The main purpose of this is
+   to make sure that empty JavaScript output_subareas have no height. */
+div.prompt:empty {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+div.unrecognized_cell {
+  padding: 5px 5px 5px 0px;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+div.unrecognized_cell .inner_cell {
+  border-radius: 2px;
+  padding: 5px;
+  font-weight: bold;
+  color: red;
+  border: 1px solid #cfcfcf;
+  background: #eaeaea;
+}
+div.unrecognized_cell .inner_cell a {
+  color: inherit;
+  text-decoration: none;
+}
+div.unrecognized_cell .inner_cell a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+@media (max-width: 540px) {
+  div.unrecognized_cell > div.prompt {
+    display: none;
+  }
+}
+div.code_cell {
+  /* avoid page breaking on code cells when printing */
+}
+@media print {
+  div.code_cell {
+    page-break-inside: avoid;
+  }
+}
+/* any special styling for code cells that are currently running goes here */
+div.input {
+  page-break-inside: avoid;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.input {
+    /* Old browsers */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: stretch;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    display: box;
+    box-orient: vertical;
+    box-align: stretch;
+    /* Modern browsers */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+/* input_area and input_prompt must match in top border and margin for alignment */
+div.input_prompt {
+  color: #303F9F;
+  border-top: 1px solid transparent;
+}
+div.input_area > div.highlight {
+  margin: 0.4em;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+}
+div.input_area > div.highlight > pre {
+  margin: 0px;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+}
+/* The following gets added to the <head> if it is detected that the user has a
+ * monospace font with inconsistent normal/bold/italic height.  See
+ * notebookmain.js.  Such fonts will have keywords vertically offset with
+ * respect to the rest of the text.  The user should select a better font.
+ * See: https://github.com/ipython/ipython/issues/1503
+ *
+ * .CodeMirror span {
+ *      vertical-align: bottom;
+ * }
+ */
+.CodeMirror {
+  line-height: 1.21429em;
+  /* Changed from 1em to our global default */
+  font-size: 14px;
+  height: auto;
+  /* Changed to auto to autogrow */
+  background: none;
+  /* Changed from white to allow our bg to show through */
+}
+.CodeMirror-scroll {
+  /*  The CodeMirror docs are a bit fuzzy on if overflow-y should be hidden or visible.*/
+  /*  We have found that if it is visible, vertical scrollbars appear with font size changes.*/
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.CodeMirror-lines {
+  /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
+  /* we have set a different line-height and want this to scale with that. */
+  padding: 0.4em;
+}
+.CodeMirror-linenumber {
+  padding: 0 8px 0 4px;
+}
+.CodeMirror-gutters {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.CodeMirror pre {
+  /* In CM3 this went to 4px from 0 in CM2. We need the 0 value because of how we size */
+  /* .CodeMirror-lines */
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+/*
+
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+Adapted from GitHub theme
+
+*/
+.highlight-base {
+  color: #000;
+}
+.highlight-variable {
+  color: #000;
+}
+.highlight-variable-2 {
+  color: #1a1a1a;
+}
+.highlight-variable-3 {
+  color: #333333;
+}
+.highlight-string {
+  color: #BA2121;
+}
+.highlight-comment {
+  color: #408080;
+  font-style: italic;
+}
+.highlight-number {
+  color: #080;
+}
+.highlight-atom {
+  color: #88F;
+}
+.highlight-keyword {
+  color: #008000;
+  font-weight: bold;
+}
+.highlight-builtin {
+  color: #008000;
+}
+.highlight-error {
+  color: #f00;
+}
+.highlight-operator {
+  color: #AA22FF;
+  font-weight: bold;
+}
+.highlight-meta {
+  color: #AA22FF;
+}
+/* previously not defined, copying from default codemirror */
+.highlight-def {
+  color: #00f;
+}
+.highlight-string-2 {
+  color: #f50;
+}
+.highlight-qualifier {
+  color: #555;
+}
+.highlight-bracket {
+  color: #997;
+}
+.highlight-tag {
+  color: #170;
+}
+.highlight-attribute {
+  color: #00c;
+}
+.highlight-header {
+  color: blue;
+}
+.highlight-quote {
+  color: #090;
+}
+.highlight-link {
+  color: #00c;
+}
+/* apply the same style to codemirror */
+.cm-s-ipython span.cm-keyword {
+  color: #008000;
+  font-weight: bold;
+}
+.cm-s-ipython span.cm-atom {
+  color: #88F;
+}
+.cm-s-ipython span.cm-number {
+  color: #080;
+}
+.cm-s-ipython span.cm-def {
+  color: #00f;
+}
+.cm-s-ipython span.cm-variable {
+  color: #000;
+}
+.cm-s-ipython span.cm-operator {
+  color: #AA22FF;
+  font-weight: bold;
+}
+.cm-s-ipython span.cm-variable-2 {
+  color: #1a1a1a;
+}
+.cm-s-ipython span.cm-variable-3 {
+  color: #333333;
+}
+.cm-s-ipython span.cm-comment {
+  color: #408080;
+  font-style: italic;
+}
+.cm-s-ipython span.cm-string {
+  color: #BA2121;
+}
+.cm-s-ipython span.cm-string-2 {
+  color: #f50;
+}
+.cm-s-ipython span.cm-meta {
+  color: #AA22FF;
+}
+.cm-s-ipython span.cm-qualifier {
+  color: #555;
+}
+.cm-s-ipython span.cm-builtin {
+  color: #008000;
+}
+.cm-s-ipython span.cm-bracket {
+  color: #997;
+}
+.cm-s-ipython span.cm-tag {
+  color: #170;
+}
+.cm-s-ipython span.cm-attribute {
+  color: #00c;
+}
+.cm-s-ipython span.cm-header {
+  color: blue;
+}
+.cm-s-ipython span.cm-quote {
+  color: #090;
+}
+.cm-s-ipython span.cm-link {
+  color: #00c;
+}
+.cm-s-ipython span.cm-error {
+  color: #f00;
+}
+.cm-s-ipython span.cm-tab {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAMCAYAAAAkuj5RAAAAAXNSR0IArs4c6QAAAGFJREFUSMft1LsRQFAQheHPowAKoACx3IgEKtaEHujDjORSgWTH/ZOdnZOcM/sgk/kFFWY0qV8foQwS4MKBCS3qR6ixBJvElOobYAtivseIE120FaowJPN75GMu8j/LfMwNjh4HUpwg4LUAAAAASUVORK5CYII=);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+div.output_wrapper {
+  /* this position must be relative to enable descendents to be absolute within it */
+  position: relative;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 1;
+}
+/* class for the output area when it should be height-limited */
+div.output_scroll {
+  /* ideally, this would be max-height, but FF barfs all over that */
+  height: 24em;
+  /* FF needs this *and the wrapper* to specify full width, or it will shrinkwrap */
+  width: 100%;
+  overflow: auto;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  display: block;
+}
+/* output div while it is collapsed */
+div.output_collapsed {
+  margin: 0px;
+  padding: 0px;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+div.out_prompt_overlay {
+  height: 100%;
+  padding: 0px 0.4em;
+  position: absolute;
+  border-radius: 2px;
+}
+div.out_prompt_overlay:hover {
+  /* use inner shadow to get border that is computed the same on WebKit/FF */
+  -webkit-box-shadow: inset 0 0 1px #000;
+  box-shadow: inset 0 0 1px #000;
+  background: rgba(240, 240, 240, 0.5);
+}
+div.output_prompt {
+  color: #D84315;
+}
+/* This class is the outer container of all output sections. */
+div.output_area {
+  padding: 0px;
+  page-break-inside: avoid;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+div.output_area .MathJax_Display {
+  text-align: left !important;
+}
+div.output_area 
+div.output_area 
+div.output_area img,
+div.output_area svg {
+  max-width: 100%;
+  height: auto;
+}
+div.output_area img.unconfined,
+div.output_area svg.unconfined {
+  max-width: none;
+}
+/* This is needed to protect the pre formating from global settings such
+   as that of bootstrap */
+.output {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.output_area {
+    /* Old browsers */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: stretch;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    display: box;
+    box-orient: vertical;
+    box-align: stretch;
+    /* Modern browsers */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+div.output_area pre {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  color: black;
+  background-color: transparent;
+  border-radius: 0;
+}
+/* This class is for the output subarea inside the output_area and after
+   the prompt div. */
+div.output_subarea {
+  overflow-x: auto;
+  padding: 0.4em;
+  /* Old browsers */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  /* Modern browsers */
+  flex: 1;
+  max-width: calc(100% - 14ex);
+}
+div.output_scroll div.output_subarea {
+  overflow-x: visible;
+}
+/* The rest of the output_* classes are for special styling of the different
+   output types */
+/* all text output has this class: */
+div.output_text {
+  text-align: left;
+  color: #000;
+  /* This has to match that of the the CodeMirror class line-height below */
+  line-height: 1.21429em;
+}
+/* stdout/stderr are 'text' as well as 'stream', but execute_result/error are *not* streams */
+div.output_stderr {
+  background: #fdd;
+  /* very light red background for stderr */
+}
+div.output_latex {
+  text-align: left;
+}
+/* Empty output_javascript divs should have no height */
+div.output_javascript:empty {
+  padding: 0;
+}
+.js-error {
+  color: darkred;
+}
+/* raw_input styles */
+div.raw_input_container {
+  line-height: 1.21429em;
+  padding-top: 5px;
+}
+pre.raw_input_prompt {
+  /* nothing needed here. */
+}
+input.raw_input {
+  font-family: monospace;
+  font-size: inherit;
+  color: inherit;
+  width: auto;
+  /* make sure input baseline aligns with prompt */
+  vertical-align: baseline;
+  /* padding + margin = 0.5em between prompt and cursor */
+  padding: 0em 0.25em;
+  margin: 0em 0.25em;
+}
+input.raw_input:focus {
+  box-shadow: none;
+}
+p.p-space {
+  margin-bottom: 10px;
+}
+div.output_unrecognized {
+  padding: 5px;
+  font-weight: bold;
+  color: red;
+}
+div.output_unrecognized a {
+  color: inherit;
+  text-decoration: none;
+}
+div.output_unrecognized a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.rendered_html {
+  color: #000;
+  /* any extras will just be numbers: */
+}
+
+
+
+.rendered_html :link {
+  text-decoration: underline;
+}
+.rendered_html :visited {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+.rendered_html h1:first-child {
+  margin-top: 0.538em;
+}
+.rendered_html h2:first-child {
+  margin-top: 0.636em;
+}
+.rendered_html h3:first-child {
+  margin-top: 0.777em;
+}
+.rendered_html h4:first-child {
+  margin-top: 1em;
+}
+.rendered_html h5:first-child {
+  margin-top: 1em;
+}
+.rendered_html h6:first-child {
+  margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+.rendered_html * + ul {
+  margin-top: 1em;
+}
+.rendered_html * + ol {
+  margin-top: 1em;
+}
+
+
+.rendered_html pre,
+
+
+
+.rendered_html tr,
+.rendered_html th,
+
+.rendered_html td,
+
+
+.rendered_html * + table {
+  margin-top: 1em;
+}
+
+.rendered_html * + p {
+  margin-top: 1em;
+}
+
+.rendered_html * + img {
+  margin-top: 1em;
+}
+.rendered_html img,
+
+.rendered_html img.unconfined,
+
+div.text_cell {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.text_cell > div.prompt {
+    display: none;
+  }
+}
+div.text_cell_render {
+  /*font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;*/
+  outline: none;
+  resize: none;
+  width: inherit;
+  border-style: none;
+  padding: 0.5em 0.5em 0.5em 0.4em;
+  color: #000;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+a.anchor-link:link {
+  text-decoration: none;
+  padding: 0px 20px;
+  visibility: hidden;
+}
+h1:hover .anchor-link,
+h2:hover .anchor-link,
+h3:hover .anchor-link,
+h4:hover .anchor-link,
+h5:hover .anchor-link,
+h6:hover .anchor-link {
+  visibility: visible;
+}
+.text_cell.rendered .input_area {
+  display: none;
+}
+.text_cell.rendered 
+.text_cell.unrendered .text_cell_render {
+  display: none;
+}
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.cm-header-1 {
+  font-size: 185.7%;
+}
+.cm-header-2 {
+  font-size: 157.1%;
+}
+.cm-header-3 {
+  font-size: 128.6%;
+}
+.cm-header-4 {
+  font-size: 110%;
+}
+.cm-header-5 {
+  font-size: 100%;
+  font-style: italic;
+}
+.cm-header-6 {
+  font-size: 100%;
+  font-style: italic;
+}
+</style>
+<style type="text/css">.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
+.highlight .c { color: #408080; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #B00040 } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .na { color: #7D9029 } /* Name.Attribute */
+.highlight .nb { color: #008000 } /* Name.Builtin */
+.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #0000FF } /* Name.Function */
+.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #19177C } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
+.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight .vc { color: #19177C } /* Name.Variable.Class */
+.highlight .vg { color: #19177C } /* Name.Variable.Global */
+.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style>
+<style type="text/css">
+/* Temporary definitions which will become obsolete with Notebook release 5.0 */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-bold { font-weight: bold; }
+</style>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1-线性代数">1 线性代数<a class="anchor-link" href="#1-线性代数">¶</a></h2><p>线性代数作为数学的一个分支，广泛应用于科学和工程中。然而，因为线性代数主要是面向连续数学，而非离散数学，所以很多计算机科学家很少接触它。掌握好线性代数对于理解和从事机器学习算法相关工作是很有必要的。</p>
+<h3 id="1.1-标量、向量、矩阵和张量">1.1 标量、向量、矩阵和张量<a class="anchor-link" href="#1.1-标量、向量、矩阵和张量">¶</a></h3><p>学习线性代数，会涉及到以下几个数学概念：</p>
+<ul>
+<li><strong>标量</strong><br />
+一个标量就是一个单独的数，它不同于线性代数中研究的其他大部分对象。在介绍标量时，我们会明确它们是哪种类型的数。比如，在定义实数标量时，我们可能会说“令$s \in \mathbb{R}$表示一条线的斜率”；在定义自然数标量时，我们可能会说“令$n \in \mathbb{N}$表示元素的数目”。</li>
+<li><strong>向量</strong><br />
+一个向量是一列数。这些数是有序排列的。通过次序中的索引，我们可以确定每个单独的数。通常我们赋予向量粗体的小写变量名称，比如$\boldsymbol{x}$。向量中的元素可以通过带脚标的斜体表示。向量$\boldsymbol{x}$的第一个元素是$x_1$，第二个元素是$x_2$，等等。我们也会注明存储在向量中的元素是什么类型的，如果每个元素都属于$\mathbb{R}$，并且该向量有$n$个元素，那么该向量属于实数集$\mathbb{R}$的$n$次笛卡尔乘积构成的集合，记为$\mathbb{R}^n$。并且需要明确表示向量中的元素时候，我们会将元素排列成一个方括号包围的纵列：
+$$\begin{bmatrix} x_1\\ x_2\\ \vdots\\ x_n \end{bmatrix}\tag{1}$$
+我们可以把向量看作空间中的点，每个元素是不同坐标轴上的坐标。</li>
+<li><strong>矩阵</strong><br />
+矩阵是一个二维数组，其中的每一个元素由两个索引所确定。当需要明确表示矩阵中的元素时，我们将它们写在用方括号括起来的数组中：
+$$\begin{bmatrix} A_{1,1} & A_{1,2}\\ A_{2,1} & A_{2,2} \end{bmatrix}\tag{2}$$</li>
+<li><strong>张量</strong>
+在某些情况下，我们会讨论超过两维的数组。一般的，一个数据中的元素分布在若干维坐标的规则网络中，我们称之为张量。张量$\mathbf{A}$中坐标为$(i,j,k)$的元素记作$A_{i,j,k}$。</li>
+<li><strong>其它</strong>
+转置是矩阵的重要操作之一。矩阵的转置是以对角线为轴的镜像，这条从左上角到右下角的对角线被称为主对角线。<br />
+只要矩阵的形状一样，我们可以把两个矩阵相加。两个矩阵相加是指对应位置的元素相加。<br />
+标量和矩阵相乘，或是和矩阵相加时，我们只需将其与矩阵的每个元素相乘或相加。<br />
+我们也使用一些不那么常规的符号。我们允许矩阵和向量相加，产生另一个矩阵，而无需在加法操作前定义一个将向量复制到每一行而生成的矩阵。这种隐式地复制向量到很多位置的方式，称为广播。</li>
+</ul>
+<h3 id="1.2-矩阵和向量相乘">1.2 矩阵和向量相乘<a class="anchor-link" href="#1.2-矩阵和向量相乘">¶</a></h3><p>矩阵乘法是矩阵运算中最重要的操作之一。两个矩阵$\boldsymbol{A}$和$\boldsymbol{B}$的矩阵乘积是第三个矩阵$\boldsymbol{C}$。为了使乘法可被定义，矩阵$\boldsymbol{A}$的列数必须和矩阵$\boldsymbol{B}$的行数相等。如果矩阵$\boldsymbol{A}$的形状是$m \times n$，矩阵$\boldsymbol{B}$的形状是$n \times p$，那么矩阵$\boldsymbol{C}$的形状是$m \times p$。我们可以通过将两个或多个矩阵并列放置以书写矩阵乘法，例如
+$$\boldsymbol{C}=\boldsymbol{A}\boldsymbol{B}\tag{3}$$
+具体地，该乘法操作定义为
+$$C_{i,j}=\sum_kA_{i,k}B_{k,j}\tag{4}$$
+需要注意，两个矩阵的标准乘积不是指两个矩阵对应元素的乘积。不过，那样的矩阵操作确实是存在的，称为元素对应乘积或者Hadamard乘积，记为$\boldsymbol{A}\odot\boldsymbol{B}$。<br />
+两个相同维数的向量$\boldsymbol{x}$和$\boldsymbol{y}$的点积可看作矩阵乘积$\boldsymbol{x}^T\boldsymbol{y}$。<br />
+矩阵乘积元算有很多有用的性质，从而使矩阵的数学分析更加方便。比如，矩阵乘积服从分配律和结合律，反不满足交换律。然而两个向量的点积满足交换律。<br />
+于是，我们可以表达下列线性方程组：
+$$\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}\tag{4}$$</p>
+<h3 id="1.3-单位矩阵和逆矩阵">1.3 单位矩阵和逆矩阵<a class="anchor-link" href="#1.3-单位矩阵和逆矩阵">¶</a></h3><p>线性代数提供了称为矩阵逆的强大工具。对于大多数矩阵$\boldsymbol{A}$，我们都能通过矩阵逆解析地求解式$(4)$。<br />
+为了描述矩阵逆，我们首先需要定义单位矩阵的概念。任意向量和单位矩阵相乘，都不会改变。单位矩阵的结构很简单：所有沿主对角线的元素都是1。<br />
+矩阵逆与矩阵自身相乘的结果为单位矩阵。</p>
+<h3 id="1.4-线性相关和生成子空间">1.4 线性相关和生成子空间<a class="anchor-link" href="#1.4-线性相关和生成子空间">¶</a></h3><p>如果逆矩阵$\boldsymbol{A}^{-1}$存在，那么式$(4)$肯定对于每一个向量$\boldsymbol{b}$恰好存在一个解。但是，对于方程组而言，对于向量$\boldsymbol{b}$的某些值，有可能不存在解，或者存在无限多个解。存在多余一个解但是少于无限多个解的情况是不可能发生的。<br />
+为了分析方程有多少个解，我们可以将$\boldsymbol{A}$的列向量看作从原点出发的不同方向，确定有多少种方法可以到达向量$\boldsymbol{b}$。在这个观点下，向量$\boldsymbol{x}$中的每个元素表示我们应该沿着这些方向走多远。一般而言，这种操作称为线性组合。一组向量的生成子空间是原始向量线性组合后所能抵达的点的集合。<br />
+如果一组向量中的任意一个向量都不能表示成其他向量的线性组合，那么这组向量称为线性无关。如果某个向量是一组向量中某些向量的线性组合，那么我们将这个向量加入这组向量后不会增加这组向量的生成子空间。</p>
+<h3 id="1.5-范数">1.5 范数<a class="anchor-link" href="#1.5-范数">¶</a></h3><p>有时我们需要衡量一个向量的大小。在机器学习中，我们经常使用称为范数的函数来衡量向量大小。形式上，$L^p$范数定义如下
+$$\|\boldsymbol{x}\|_p=(\sum_i|x_i|^p)^{\frac{1}{p}}\tag{5}$$
+其中，$p \in \mathbb{R}$，$p \ge 1$。</p>
+<h3 id="1.6-特殊类型的矩阵和向量">1.6 特殊类型的矩阵和向量<a class="anchor-link" href="#1.6-特殊类型的矩阵和向量">¶</a></h3><p>有些特殊类型的矩阵和向量是特别有用的。对角矩阵只在主对角线上含有非零元素，其他位置都是零；对称矩阵是转置和自己相等的矩阵；单位向量是具有单位范数的向量；正交矩阵是指行向量和列向量是分别标准正交的方阵。</p>
+<h3 id="1.7-特征分解">1.7 特征分解<a class="anchor-link" href="#1.7-特征分解">¶</a></h3><p>特征分解是使用最广的矩阵分解之一，即我们将矩阵分解成一组特征向量和特征值。<br />
+方程$\boldsymbol{A}$的特征向量是指与$\boldsymbol{A}$相乘后相当于对该向量进行缩放的非零向量$\boldsymbol{v}$:
+$$\boldsymbol{A}\boldsymbol{v}=\lambda \boldsymbol{v}\tag{6}$$
+其中，标量$\lambda$称为这个特征向量对应的特征值。<br />
+如果$\boldsymbol{v}$是$\boldsymbol{A}$的特征向量，那么任何缩放后的向量$s\boldsymbol{v}$也是$\boldsymbol{A}$的特针向量。此外，$s\boldsymbol{v}$和$\boldsymbol{v}$有相同的特征值。基于这个原因，我们只考虑单位特征向量。<br />
+假设矩阵$\boldsymbol{A}$有$n$个线性无关的特征向量$\{\boldsymbol{v}^{(1)},\cdots,\boldsymbol{v}^{(n)}\}$，对应着特征值$\{\lambda_1,\cdots,\lambda_n\}$。我们将特征向量连接成一个矩阵，使得每一列是一个特征向量：$\boldsymbol{V}=[\boldsymbol{v}^{(1)},\cdots,\boldsymbol{v}^{(n)}]$。类似的，我们也可以将特征值连接成一个向量$\boldsymbol{\lambda}=[\lambda_1,\cdots,\lambda_n]^T$。因此，$\boldsymbol{A}$的特征分解可以记作：
+$$\boldsymbol{A}=\boldsymbol{V}{\rm diag}(\boldsymbol{\lambda})\boldsymbol{V}^{-1}\tag{7}$$
+我们已经看到了构建具有特定特征值和特征向量的矩阵，能够使我们在目标方向上延伸空间。然而，我们也尝尝希望将矩阵分解成特征值和特征向量。这样可以帮助我们分析矩阵的特定性质。<br />
+不是每一个矩阵都可以分解成特征值和特征向量。在某些情况下，特征分解存在，但是会涉及复数而非实数。幸运的是，我们通常只需要分解一类有简单分解的矩阵。具体来讲，每个实对称矩阵都可以分解成实特征向量和实特征值：
+$$\boldsymbol{A}=\boldsymbol{Q}\boldsymbol{\Lambda}\boldsymbol{Q}^T\tag{8}$$
+其中，$\boldsymbol{Q}$是$\boldsymbol{A}$的特征向量组成的正交矩阵，$\boldsymbol{\Lambda}$是对角矩阵。特征值$\Lambda_{i,i}$对应的特征向量是矩阵$\boldsymbol{Q}$的第$i$列，记作$\boldsymbol{Q}_{:,i}$。因为$\boldsymbol{Q}$是正交矩阵，我们可以将$\boldsymbol{A}$看作沿方向$\boldsymbol{v}^{(i)}$延展$\lambda_i$倍的空间。<br />
+虽然任意一个实对称矩阵$\boldsymbol{A}$都有特征分解，但是特征分解可能并不唯一。如果两个或多个特征向量拥有相同的特征值，那么在由这些特征向量产生的生成子空间中，任意一组正交向量都是该特征值对应的特征向量。因此，我们可以等价地从这些特征向量中构成$\boldsymbol{Q}$作为替代。按照惯例，我们通常按降序排列$\boldsymbol{\Lambda}$的元素。在该约定下，特征分解唯一，当且仅当所有的特征值都是唯一的。<br />
+矩阵的特征分解给了我们很多关于矩阵有用的信息。矩阵是奇异的，当且仅当含有零特征值。实对称矩阵的特征分解也可以用于优化二次方程$f(\boldsymbol{x})=\boldsymbol{x}^T\boldsymbol{A}\boldsymbol{x}$，其中限制$\|\boldsymbol{x}\|_2=1$，当$\boldsymbol{x}$等于$\boldsymbol{A}$的某个特征向量时，$f$将返回对应的特征值。在限制条件下，函数$f$的最大值是最大特征值，最小值是最小特征值。<br />
+所有特征值都是正数的矩阵称为正定的；所有特征值都是非负数的矩阵称为半正定。同样地，所有特征值都是负数的矩阵称为负定；所有特征值都是非负数的矩阵称为半负定。</p>
+<h3 id="1.8-奇异值分解">1.8 奇异值分解<a class="anchor-link" href="#1.8-奇异值分解">¶</a></h3><p>我们已经探讨了如何将矩阵分解成特征向量和特征值。还有另一种分解矩阵的方法，称为奇异值分解，是将矩阵分解为奇异向量和奇异值。通过奇异值分解，我们会得到一些与特征分解相同类型的信息。然而，奇异值分解有更广泛的应用。每个实数矩阵都有一个奇异值分解，但不一定都有特征分解。例如，非方阵的矩阵没有特征分解，这时我们只能使用奇异值分解。<br />
+我们将矩阵$\boldsymbol{A}$分解成三个矩阵的乘积：
+$$\boldsymbol{A}=\boldsymbol{U}\boldsymbol{D}\boldsymbol{V}^T\tag{9}$$
+这些矩阵中的每一个经定义后都拥有特殊的结构。矩阵$\boldsymbol{U}$和$\boldsymbol{V}$都定义为正交矩阵，而矩阵$\boldsymbol{D}$定义为对角矩阵。注意，矩阵$\boldsymbol{D}$不一定是方阵。<br />
+对角矩阵$\boldsymbol{D}$对角线上的元素称为矩阵$\boldsymbol{A}$的奇异值。矩阵$\boldsymbol{U}$的列向量称为左奇异向量，矩阵$\boldsymbol{V}$的列向量称为右奇异向量。<br />
+SVD最有用的一个性质可能是拓展矩阵求逆到非方矩阵上。</p>
+<h3 id="1.9-Moore-Penrose伪逆">1.9 Moore-Penrose伪逆<a class="anchor-link" href="#1.9-Moore-Penrose伪逆">¶</a></h3><p>对于非方矩阵而言，其逆矩阵没有定义。假设在下面的问题中，我们希望通过矩阵$\boldsymbol{A}$的左逆$\boldsymbol{B}$来求解线性方程：
+$$\boldsymbol{A}\boldsymbol{x}=\boldsymbol{y}\tag{10}$$
+如果矩阵$\boldsymbol{A}$的行数大于列数，那么上述方程可能没有解。如果矩阵$\boldsymbol{A}$的行数小于列数，那么上述矩阵可能有多个解。<br />
+Moore-Penrose伪逆使我们在这类问题上取得了一定的进展。矩阵$\boldsymbol{A}$的伪逆定义为
+$$\boldsymbol{A}^+=\lim_{\alpha \to 0}(\boldsymbol{A}^T\boldsymbol{A}+\alpha\boldsymbol{I})^{-1}\boldsymbol{A}^T\tag{11}$$
+计算伪逆的实际算法没有基于这个定义，而是使用下面的公式
+$$\boldsymbol{A}^+=\boldsymbol{V}\boldsymbol{D}^+\boldsymbol{U}^T\tag{12}$$
+其中，矩阵$\boldsymbol{U}$、$\boldsymbol{D}$和$\boldsymbol{V}$是矩阵$\boldsymbol{A}$奇异值分解后得到的矩阵。对角矩阵$\boldsymbol{D}$的伪逆$\boldsymbol{D}^+$是其非零元素取倒数之后再转置得到的。<br />
+当矩阵$\boldsymbol{A}$的列数多余行数时，使用伪逆求解线性方程是众多可能解法中的一种。特别地，$\boldsymbol{x}=\boldsymbol{A}^+\boldsymbol{y}$是方程所有可能解中欧几里得范数最小的一个。<br />
+当矩阵$\boldsymbol{A}$的行数多余列数时，可能没有解。在这种情况下，通过伪逆得到的$\boldsymbol{x}$使得$\boldsymbol{A}\boldsymbol{x}$和$\boldsymbol{y}$的欧几里的距离最小。</p>
+<h3 id="1.10-迹运算">1.10 迹运算<a class="anchor-link" href="#1.10-迹运算">¶</a></h3><p>迹运算返回的是矩阵对角元素的和：
+$${\rm Tr}(\boldsymbol{A})=\sum_i(\boldsymbol{A}_{i,i})\tag{13}$$
+迹运算因为很多原因而有用。若不使用求和符号，有些矩阵运算很难描述，而通过矩阵乘法和迹运算符号可以清楚地表示。</p>
+<h3 id="1.11-行列式">1.11 行列式<a class="anchor-link" href="#1.11-行列式">¶</a></h3><p>行列式，记作${\rm det}(\boldsymbol{A})$，是一个将方阵$\boldsymbol{A}$映射到实数的函数。行列式等于矩阵特征值的乘积。行列式的绝对值可以用来衡量矩阵参与矩阵乘法后空间扩大或者缩小了多少。如果行列式是0，那么空间至少沿着某一维完全收缩了，使其失去了所有的体积；如果行列式是1，那么这个转换保持空间体积不变。</p>
+<h2 id="2-概率论">2 概率论<a class="anchor-link" href="#2-概率论">¶</a></h2><p>在模式识别领域的一个关键概念是不确定性的概念，它可以由测量的误差引起，也可以由数据集的有限大小引起。概率论提供了一个合理的框架，用来对不确定进行量化和计算。<br />
+我们用下面的形式表示概率论的两条基本规则：
+$${\rm sum\ rule} \quad p(X)=\sum_{Y} p(X,Y)\tag{14}$$
+$${\rm product\ rule} \quad p(X,Y)=p(Y|X)p(X)\tag{15}$$
+从而，我们可以推导出贝叶斯定理：
+$$p(Y|X)=\frac{p(X|Y)p(Y)}{p(X)}\tag{16}$$</p>
+<h3 id="2.1-概率密度">2.1 概率密度<a class="anchor-link" href="#2.1-概率密度">¶</a></h3><p>既然考虑了定义在离散事件集合上的概率，我们也希望考虑与连续变量相关的概率。如果一个实值变量$x$的概率落在区间$(x,x+\delta x)$的概率由$p(x)\delta x$给出（$\delta x \to 0$），那么$p(x)$叫做$x$的概率密度。$x$位于区间$(a,b)$的概率由下式给出：
+$$p(x \in (a,b))=\int_{a}^{b}p(x)\,dx\tag{16}$$
+由于概率是非负的，并且$x$的值一定位于实数轴上的某个位置，因此概率密度一定满足下面两个条件：
+$$p(x) \ge 0 \tag{17}$$
+$$\int_{\infty}^{-\infty}p(x)\,dx=1\tag{18}$$
+在变量以非线性的形式变化的情况下，概率密度函数通过Jacobian因子变换为与简单的函数不同的形式，因此，概率密度最大值的概念取决于变量的选择。<br />
+概率的加和规则和乘积规则以及贝叶斯规则，同样可以应用于概率密度函数的情形，也可以应用于离散变量与连续变量相结合的情形。例如，如果$x$和$y$是两个实数变量，那么加和规则和乘积规则的形式为：
+$$p(x)=\int p(x,y)\,dy\tag{19}$$
+$$p(x,y)=p(y|x)p(x)\tag{20}$$</p>
+<h3 id="2.2-期望和协方差">2.2 期望和协方差<a class="anchor-link" href="#2.2-期望和协方差">¶</a></h3><p>涉及到概率的一个重要的操作是寻找函数的加权平均值。在概率分布$p(x)$下，函数$f(x)$的平均值被称为$f(x)$的期望，记作$\mathbb{E}[f]$。对于一个离散变量，它的定义为：
+$$\mathbb{E}[f]=\sum_{x}p(x)f(x)\tag{21}$$
+因此平均值根据$x$的不同值的相对概率加权。在连续变量的情形下，期望以对应概率密度的积分的形式表示：
+$$\mathbb{E}[f]=\int p(x)f(x)\,dx\tag{22}$$
+两种情形下，如果我们给定有限数量的$N$个点，这些点满足某个概率分布或者概率密度函数，那么期望可以通过求和的方式估计：
+$$\mathbb{E}[f]\simeq\frac{1}{N}\sum_{n=1}^{N}f(x_n)\tag{23}$$
+$f(x)$的方差被定义为
+$${\rm var}[f]=\mathbb{E}[(f(x)-\mathbb{E}[f(x)])^2]\tag{24}$$
+它度量了$f(x)$在均值$\mathbb{E}[f(x)]$附近变化性的大小。<br />
+对于两个随机变量$x$和$y$，协方差被定义为
+$${\rm cov}[x,y]=\mathbb{E}_{x,y}[\{x-\mathbb{E}[x]\}\{y-\mathbb{E}[y]\}]=\mathbb{E}_{x,y}[xy]-\mathbb{E}[x]\mathbb{E}[y]\tag{25}$$
+它表示在多大程度上$x$和$y$会共同变化。如果$x$和$y$相互独立，那么他们的协方差为0。</p>
+<h3 id="2.3-贝叶斯概率">2.3 贝叶斯概率<a class="anchor-link" href="#2.3-贝叶斯概率">¶</a></h3><p>根据随机重复事件的频率来考察概率，我们把这个叫做经典的或者频率学家的关于概率的观点，现在我们转向更加通用的贝叶斯观点。这种观点中，频率提供了不确定性的一个定量化描述。<br />
+考虑一个不确定性时间，例如月球是否曾经处于围绕太阳的自己的轨道上，或者本世纪末北极冰盖是否会消失。这些事件无法重复多次，因此我们无法像之前那样定义概率。但是，我们通常会有一些想法，例如北极冰盖融化的速度等等。如果我们获得了新鲜的证据，例如人造卫星收集到了一些新的修正信息，我们可能就会修正我们对于冰盖融化速度的观点。我们估计冰盖融化速度会影响我们采取的措施，例如我们会努力减少温室气体的排放。在这样的情况下，我们可能希望能够定量地描述不确定性，并且根据少量新的证据对不确定性进行精确的修改，对接下来将要采取的动作进行修改，或者对最终的决策进行修改。这可以通过一种优雅的通用的贝叶斯概率观点来实现。<br />
+贝叶斯定理的形式为
+$$p(\boldsymbol{w}|\mathcal{D})=\frac{p(\mathcal{D}|\boldsymbol{w})p(\boldsymbol{w})}{p(\mathcal{D})}\tag{26}$$
+它让我们能够通过后验概率$p(\boldsymbol{w}|\mathcal{D})$，在观测到$\mathcal{D}$之后估计$\boldsymbol{w}$的不确定性。贝叶斯定理右侧的量$p(\mathcal{D}|\boldsymbol{w})$由观测数据集$\mathcal{D}$来估计，可以被看成参数向量$\boldsymbol{w}$的函数，被称为似然函数。它表达了在不同的参数向量$\boldsymbol{w}$下，观测数据出现的可能性的大小。给定似然函数的定义，我们可以用自然语言表述贝叶斯定理：
+$${\rm posterior} \propto {\rm likelihood} \times {\rm prior}\tag{27}$$
+其中，所有的量都可以看成$\boldsymbol{w}$的函数。<br />
+在贝叶斯观点和频率学家观点中，似然函数$p(\mathcal{D}|\boldsymbol{w})$都起着重要的作用。然而，在两种观点中，使用的方式有着本质的不同。在频率学家的观点中，$\boldsymbol{w}$被认为是一个固定的参数，它的值由某种形式的“估计”来确定，这个估计的误差通过考察可能的数据集$\mathcal{D}$的概率分布来得到，它的值由某种形式的“估计”来确定，这个估计的误差通过考察可能的数据集$\mathcal{D}$的概率分布来得到。相反，从贝叶斯的观点来看，只有一个数据集$\mathcal{D}$，参数的不确定性通过$\boldsymbol{w}$的概率分布来表达。<br />
+频率学家广泛使用的一个估计是最大似然估计，其中$\boldsymbol{w}$的值是使似然函数$p(\mathcal{D}|\boldsymbol{w})$达到最大值的$\boldsymbol{w}$值。这对应于选择使观察到的数据集出现概率最大的$\boldsymbol{w}$的值。在机器学习的文献中，似然函数的负对数被叫做误差函数。由于负对数是单调递减的函数，最大化似然函数等价于最小化误差函数。</p>
+<h3 id="2.4-概率分布">2.4 概率分布<a class="anchor-link" href="#2.4-概率分布">¶</a></h3><p>概率论在解决模式识别问题时有重要作用，我们现在希望探究一下某些特殊的概率分布的例子以及它们的性质，这些概率分布吸引了很多人的兴趣，也是构成更复杂模型的基石。<br />
+本章讨论的概率分布的一个作用是在给定有限次观测$\boldsymbol{x}_1,\cdots,\boldsymbol{x}_N$的前提下，对随机变量$\boldsymbol{x}$的概率分布$p(\boldsymbol{x})$建模，这个问题被称为密度估计，本章中，我们会假定数据点是独立同分布的。<br />
+我们考虑离散随机变量的二项分布和多项式分布，以及连续随机变量的高斯分布，这些是参数分布的具体例子。之所以被成为参数分布，是因为少量可调节的参数控制了整个概率分布。为了把这种模型应用到密度估计问题中，我们需要一个步骤，能够在给定观察数据集的条件下，确定参数的合适的值。在频率学家的观点中，我们通过最优化某些准则（例如似然函数）来确定参数的具体值。相反，在贝叶斯观点中，给定观察数据，我们引入参数的先验分布，然后使用贝叶斯定理来计算对应后验概率分布。<br />
+我们会看到，共轭先验有着很重要的作用。它使得后验概率分布的函数形式与先验概率相同，因此使得贝叶斯分析得到了极大的简化。例如，多项式分布的参数的共轭先验被叫做狄利克雷分布，而高斯分布的均值的共轭先验是另一个高斯分布。所有这些分布都是指数族分布的特例，而指数族分布也有很多重要的性质。</p>
+<h4 id="2.4.1-二元变量">2.4.1 二元变量<a class="anchor-link" href="#2.4.1-二元变量">¶</a></h4><p>伯努利分布：
+$${\rm Bern}(x|\mu)=\mu^x(1-\mu)^{1-x}\tag{28}$$
+二项分布：
+$${\rm Bin}(m|N,\mu)={N \choose M}\mu^m(1-\mu)^{N-m}\tag{29}$$
+二项分布的共轭先验 — Beta分布：
+$${\rm Beta}(\mu|a,b)=\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\mu^{a-1}(1-\mu)^{b-1}\tag{30}$$</p>
+<h4 id="2.4.2-多项式变量">2.4.2 多项式变量<a class="anchor-link" href="#2.4.2-多项式变量">¶</a></h4><p>多项式分布：
+$${\rm Mult}(m_1,m_2,...,m_K|\mu,N)={N \choose m_1m_2...m_K}\prod_{k=1}^K\mu_k^{m_k}\tag{31}$$
+多项式分布的共轭先验 — 狄利克雷分布：
+$${\rm Dir}(\mu|\alpha)=\frac{\Gamma(\alpha_0)}{\Gamma(\alpha_1)...\Gamma(\alpha_K)}\prod_{k=1}^K\mu_k^{\alpha_k-1}\tag{32}$$</p>
+<h4 id="2.4.3-高斯分布">2.4.3 高斯分布<a class="anchor-link" href="#2.4.3-高斯分布">¶</a></h4><p>高斯分布，也被称为正态分布，广泛应用于连续型随机变量分布的模型中。<br />
+一元高斯分布：
+$$\mathcal{N}(x|\mu,\sigma^2)=\frac{1}{(2\pi\sigma^2)^{\frac{1}{2}}}{\rm exp}\left\{-\frac{1}{2\sigma^2}(x-\mu)^2\right\}\tag{33}$$
+多元高斯分布：
+$$\mathcal{N}(\boldsymbol{x}|\boldsymbol{\mu},\boldsymbol{\Sigma})=\frac{1}{(2\pi)^{\frac{D}{2}}}\frac{1}{|\boldsymbol{\Sigma}|^{\frac{1}{2}}}{\rm exp}\{-\frac{1}{2}(\boldsymbol{x}-\boldsymbol{\mu})^T\boldsymbol{\Sigma}^{-1}(\boldsymbol{x}-\boldsymbol{\mu})\}\tag{34}$$
+高斯分布会在许多不同的问题中产生，可以从多个不同的角度来理解。例如，对于一个一元实值向量，使得熵取得最大值的是高斯分布，这个性质对于多元高斯分布也成立。<br />
+当我们考虑多个随机变量之和的时候，也会产生高斯分布。拉普拉斯提出的中心极限定理告诉我们，对于某些温和的情况，一组随机变量之和的概率分布随着和式中项数量的增加而逐渐趋向高斯分布。考虑$N$个变量$x_1,\cdots,x_N$，每一个都是区间$[0,1]$上的均匀分布，然后考虑均值$\frac{1}{N}(x_1+\cdots+x_N)$的分布，对于大的$N$，这个分布趋向于高斯分布。<br />
+下面，我们对高斯分布的一些性质进行总结：</p>
+<ul>
+<li>如果两组变量是联合高斯分布，那么以一组变量为条件，另一组变量同样是高斯分布；任何一个变量的边缘分布也是高斯分布。</li>
+<li>假定数据集的高斯分布的方差已知、推断均值，那么高斯分布均值的共轭先验是高斯分布；若均值已知，推断方差，那么高斯分布精度的共轭先验是Gamma分布；若我们不使用精度计算，而是考虑方差本身，这种情况下共轭先验被称为逆Gamma分布；若均值和精度都是未知的，那么共轭先验被成为正态-Gamma分布或高斯-Gamma分布。</li>
+<li>多元高斯分布精度的共轭先验是Wishart分布；如果考虑协方差矩阵本身，会推导出逆-Wishart分布；若均值和精度都是未知的，共轭先验是正态-Wishart分布或高斯-Wishart分布。</li>
+<li>学生t分布可以通过将无限个同均值不同精度的高斯分布相加的方式得到。</li>
+<li>高斯分布对周期变量的一个推广：von Mises分布。</li>
+<li>通过将更基本的概率分布进行线性组合的叠加方法，可以被形式化为概率模型，称为混合模型。通过使用足够多的高斯分布，并且调节它们的均值和方差以及线性组合的系数，几乎所有的连续概率密度都能够以任意的精度近似。  </li>
+</ul>
+<h4 id="2.4.4-指数族分布">2.4.4 指数族分布<a class="anchor-link" href="#2.4.4-指数族分布">¶</a></h4><p>参数为$\eta$的变量$x$的指数族分布定义为具有下面形式的概率分布的集合：
+$$p(\boldsymbol{x}|\boldsymbol{\eta})=h(\boldsymbol{x})g(\boldsymbol{\eta}){\rm exp}\{\boldsymbol{\eta}^T\boldsymbol{u}(\boldsymbol{x})\}\tag{35}$$
+其中，$\boldsymbol{x}$可能是标量或者向量，可能是离散的或者是连续的。这里$\boldsymbol{\eta}$被成为概率分布的自然参数，$\boldsymbol{u}(\boldsymbol{x})$是$\boldsymbol{x}$的某个函数。函数$g(\boldsymbol{\eta})$被看成系数，它确保了概率分布是归一化的。<br />
+现在考虑一组独立同分布的数据$\boldsymbol{X}=\{\boldsymbol{x}_1,...,\boldsymbol{x}_N\}$。对于这个数据集，似然函数为：
+$$p(\boldsymbol{X}|\boldsymbol{\eta})=(\prod_{n=1}^Nh(\boldsymbol{x}_n))g(\boldsymbol{\eta})^N{\rm exp}\{\boldsymbol{\eta}^T\sum_{n=1}^N\boldsymbol{u}(\boldsymbol{x}_n)\}\tag{36}$$
+令${\rm ln}p(\boldsymbol{X}|\boldsymbol{\eta})$关于$\boldsymbol{\eta}$的导数等于零，我们可以得到最大似然估计$\boldsymbol{\mu_{ML}}$满足的条件：
+$$-\nabla{\rm ln}g(\boldsymbol{\eta_{ML}})=\frac{1}{N}\sum_{n=1}^N\boldsymbol{u}(\boldsymbol{x}_n)\tag{37}$$
+原则上可以通过解这个方程来得到$\mu_{ML}$。我们看到最大似然估计的解之通过$\begin{matrix} \sum_{n} \boldsymbol{u}(\boldsymbol{x}_n) \end{matrix}$对数据产生依赖，因此这个量被称为分布的充分统计量。我们不需要存储整个数据集本身，只需要存储充分统计量的值即可。<br />
+对于指数族分布的任何成员，都存在一个共轭先验，可以写成下面的形式：
+$$p(\boldsymbol{\eta}|\boldsymbol{\chi},\nu)=f(\boldsymbol{\chi},\nu)g(\boldsymbol{\eta})^{\nu}{\rm exp}\{\nu\boldsymbol{\eta}^T\boldsymbol{\chi}\}\tag{38}$$
+我们把先验分布与似然函数乘，得到后验概率形式为：
+$$p(\boldsymbol{\eta}|\boldsymbol{X},\boldsymbol{\chi},\nu) \propto g(\boldsymbol{\eta})^{\nu+N}{\rm exp}\{\boldsymbol{\eta}^T(\sum_{n=1}^N\boldsymbol{u}(\boldsymbol{x}_n)+\nu\boldsymbol{\chi})\}\tag{39}$$
+在许多情况下，我们可能对分布应该具有的形式几乎完全不知道。这时，我们可以寻找一种形式的先验分布，被称为无信息先验。这种先验分布的目的是对后验分布产生尽可能小的影响。实际应用中，如果对应的后验概率是正常的，即它可以正确地被归一化，那么可以使用反常先验分布。</p>
+<h2 id="3-决策论">3 决策论<a class="anchor-link" href="#3-决策论">¶</a></h2><p>在模式识别领域，做决策可以根据最小化错误分类率、最小化期望损失来决定。另外，加入拒绝选项可使得在某些应用中，面对一些困难情况，避免做出决策。<br />
+我们已经把分类问题划分成了两个阶段：推断阶段和决策阶段。在推断阶段，我们使用训练数据学习$p(\mathcal{C}_k|x)$的模型，在接下来的决策阶段，我们使用这些后验概率来进行最优的分类。<br />
+另一种可能的方法是，同时解决两个问题。即简单地学习一个函数，将输入$x$直接映射为决策，这样的函数被称为判别函数。</p>
+<h2 id="4-信息论">4 信息论<a class="anchor-link" href="#4-信息论">¶</a></h2><p>假设一个发送者想要传输一个随机变量的值给接受者。这个过程中，他们传输的平均信息量可以通过求信息的期望得到，这个期望值为
+$$H[x]=-\sum_{x}p(x){\rm log}_2p(x)$$
+这个重要的量被叫做随机变量 $x$ 的熵。
+Kullback-Leibler散度为
+$$KL(p||q)\simeq\frac{1}{N}\sum_{n=1}^N\{-{\rm ln}q(\boldsymbol{x_n}|\theta)+{\rm ln}p(\boldsymbol{x_n})\}\tag{40}$$
+变量 $x$ 和 $y$ 之间的互信息为
+$$I[\boldsymbol{x},\boldsymbol{y}] \equiv KL(p(\boldsymbol{x},\boldsymbol{y})||p(\boldsymbol{x})p(\boldsymbol{y}))=- \iint p(\boldsymbol{x},\boldsymbol{y}){\rm ln}(\frac{p(\boldsymbol{x})p(\boldsymbol{y})}{p(\boldsymbol{x},\boldsymbol{y})})\,d\boldsymbol{x}\,d\boldsymbol{y}\tag{41}$$
+互信息和条件熵之间的关系为
+$$I[\boldsymbol{x},\boldsymbol{y}]=H[\boldsymbol{x}]-H[\boldsymbol{x}|\boldsymbol{y}]=H[\boldsymbol{y}]-H[\boldsymbol{y}|\boldsymbol{x}]\tag{42}$$</p>
+<h2 id="5-数值计算">5 数值计算<a class="anchor-link" href="#5-数值计算">¶</a></h2><p>机器学习算法通常需要大量的数值计算。这通常是指通过迭代过程更新解的估计值来解决数学问题的算法，而不是通过解析过程推导出公式来提供正确解的方法。常见的操作包括优化和线性方程组的求解。对于数字计算机来说，实数无法在有限内存下精确表示，因此仅仅是计算涉及实数的函数也是困难的。</p>
+<h3 id="5.1-上溢和下溢">5.1 上溢和下溢<a class="anchor-link" href="#5.1-上溢和下溢">¶</a></h3><p>连续数学在数字计算机上的根本困难是，我们需要通过有限数量的位模式来表示无限多的实数。这意味着我们在计算机中表示实数时，几乎总会引入一些近似误差。在许多情况下，这仅仅是舍入误差。舍入误差会导致一些问题，特别是当许多操作复合时，即使是理论上可行的算法，如果在设计时没有考虑最小化舍入误差的累积，在实践时也可能会导致算法失效。<br />
+一种极具毁灭性的舍入误差是下溢。当接近零的数被四舍五入为零时发生下溢。许多函数在其参数为零而不是一个很小的正数时才会表现出质的不同。例如，我们通常要避免被零除或避免取零的对数。<br />
+另一个极具破坏力的数值错误形式是上溢。当大量级的数被近似为$\infty$或$-\infty$时发生上溢。进一步的运算通常会导致这些无限值变为非数字。</p>
+<h3 id="5.2-病态条件">5.2 病态条件<a class="anchor-link" href="#5.2-病态条件">¶</a></h3><p>条件数指的是函数相对于输入的微小变化而变化的快慢程度。输入被轻微扰动而迅速改变的函数对于科学计算来说可能是有问题的，因为输入中的舍入误差可能导致输出的巨大变化。<br />
+考虑函数$f(\boldsymbol{x})=\boldsymbol{A}^{-1}\boldsymbol{x}$。当$\boldsymbol{A} \in \mathbb{R}^{n \times n}$具有特征值分解时，其条件数为
+$${\rm max}_{i,j}|\frac{\lambda_i}{\lambda_j}|\tag{43}$$
+这是最大和最小特征值的模之比。当该数很大时，矩阵求逆对输入的误差特别敏感。<br />
+这种敏感性是矩阵本身的固有特性，而不是矩阵求逆期间舍入误差的结果。即使我们乘以完全正确的矩阵逆，病态条件的矩阵也会方法预先存在的误差。在实践中，该错误将与求逆过程本身的数值误差进一步复合。</p>
+<h3 id="5.3-基于梯度的优化方法">5.3 基于梯度的优化方法<a class="anchor-link" href="#5.3-基于梯度的优化方法">¶</a></h3><p>大多数机器学习算法都涉及某种形式的优化。优化指的是改变$\boldsymbol{x}$以最小化或最大化某个函数$f(\boldsymbol{x})$的任务。我们通常以最小化$f(\boldsymbol{x})$指代大多数最优化问题。最大化可经由最小化算法最小化$-f(\boldsymbol{x})$来实现。<br />
+我们把要最小化或最大化的函数称为目标函数或准则。当我们对其进行最小化时，也把它称为代价函数、损失函数或误差函数。我们通常使用一个上标$*$表示最小化或最大化函数的$\boldsymbol{x}$值，记作$\boldsymbol{x}^*={\rm argmin}f(\boldsymbol{x})$。我们知道，对于足够小的$\epsilon$来说，$f(x-\epsilon{\rm sign}(f'(x)))$是比$f(x)$小的。因此，我们可以将$x$往导数的反方向移动一小步来减小$f(x)$，这种技术称为梯度下降。<br />
+当$f'(x)=0$时，导数无法提供往哪个方向移动的信息。$f'(x)=0$的点称为临界点或驻点。一个局部极小点意味着这个点的$f(x)$小于所有邻近点，因此不可能通过移动无穷小的步长来减小$f(x)$。一个局部极大点意味着这个点的$f(x)$大于所有邻近点，因此不可能通过移动无穷小的步长来增大$f(x)$。有些临界点既不是最小点也不是最大点，这些点称为鞍点。<br />
+使$f(x)$取得绝对的最小值的点是全局最小点。函数可能只有一个全局最小点或存在多个全局最小点，还可能存在不是全局最有的全局极小点。我们通常寻找使$f$非常小的点，但这在任何形式意义下并不一定是最小。<br />
+梯度向量指向上坡，负梯度向量指向下坡。我们在负梯度方向上移动可以减小$f$。这被称为最速度下降法或梯度下降。<br />
+最速度下降建议新的点为：
+$$\boldsymbol{x'}=\boldsymbol{x}-\epsilon\nabla_{\boldsymbol{x}}f(\boldsymbol{x})\tag{44}$$
+其中，$\epsilon$为学习率，是一个确定步长大小的正标量。最速下降在梯度的每一个元素为零时收敛。<br />
+有时我们需要计算输入和输出都为向量的函数的所有偏导数。包含所有这样的偏导数的矩阵被称为Jacobian矩阵。具体来说，如果我们有一个函数$\boldsymbol{f}:\mathbb{R}^m \to \mathbb{R}^n$，$\boldsymbol{f}$的Jacobian矩阵$\boldsymbol{J} \in \mathbb{R}^{n \times m}$定义为$J_{i,j}=\frac{\partial}{\partial x_j}f(\boldsymbol{x})_i$。<br />
+有时，我们也对导数的导数感兴趣，即二阶导数。二阶导数告诉我们，一阶导数将如何随着输入的变化而改变，它表示只基于梯度信息的梯度下降步骤是否会产生如我们预期的那样大的改善，因此它是重要的。我们可以认为，二阶导数是对曲率的衡量。当我们的函数具有多维输入时，二阶导数也有很多，我们可以将这些导数合并成一个矩阵，称为Hessian矩阵。Hessian矩阵$\boldsymbol{H}(f)(\boldsymbol{x})$定义为：
+$$\boldsymbol{H}(f)(\boldsymbol{x})_{i,j}=\frac{\partial^2}{\partial x_i \partial x_j}f(\boldsymbol{x})\tag{45}$$
+Hessian等价于梯度的Jacobian矩阵。<br />
+多维情况下，单个点处每个方向上的二阶导数是不同的。Hessian的条件数衡量这些二阶导数的变化范围。当Hessian的条件数很差时，梯度下降法也会表现得很差。这是因为一个方向上的导数增加得很快，而在另一个方向上增加得很慢。梯度下降不知道导数的这种变化，所以它不知道应该有限探索导数长期为负的方向。病态条件也导致很难选择合适的步长。步长必须足够小，一面冲过最小而向具有较强正曲率的方向上升。这通常意味着步长太小，以至于在其他较小曲率的方向上进展不明显。<br />
+我们可以使用Hessian矩阵的信息来知道搜索，以解决这个问题。其中最简单的方法是牛顿法。牛顿法基于一个二阶泰特展开来近似$\boldsymbol{x}^{(0)}$附近的$f(\boldsymbol{x})$，接着通过计算，我们可以得到这个函数的临界点：
+$$\boldsymbol{x}^*=\boldsymbol{x}^{(0)}-\boldsymbol{H}(f)(\boldsymbol{x}^{(0)})^{-1}\nabla_{\boldsymbol{x}}f(\boldsymbol{x}^{(0)})\tag{46}$$
+如果$f$是一个正定二次函数，牛顿法只要运行一次就能直接跳到函数的最小点。如果$f$不是一个真正二次但能在局部近似为正定二次，牛顿法则需要多次迭代运行。迭代地更新近似函数和跳到近似函数的最小点可以比梯度下降更快地到达临界点。这在接近全局极小点时是一个特别有用的性质，但是在鞍点附近是有害的。<br />
+仅使用梯度信息的优化算法称为一阶优化算法，如梯度下降。使用Hessian矩阵的优化算法称为二阶最优化算法，如牛顿法。</p>
+<h3 id="5.4-约束优化">5.4 约束优化<a class="anchor-link" href="#5.4-约束优化">¶</a></h3><p>有时候，我们可能希望在$\boldsymbol{x}$的某些集合$\mathbb{S}$中找$f(\boldsymbol{x})$的最大值或最小值，这称为约束优化。在约束优化术语中，集合$\mathbb{S}$内的点$\boldsymbol{x}$称为可行点。<br />
+Karush-Kuhn-Tucker(KKT)方法是针对约束优化非常通用的解决方案。为介绍KKT方法，我们引入一个广义Lagrangian或广义Lagrange函数的新函数。为定义Lagrangian，我们先要通过等式和不等式的形式描述$\mathbb{S}$。我们希望通过$m$个函数$g^{(i)}$和$n$个函数$h^{(j)}$描述$\mathbb{S}$，那么$\mathbb{S}$可以表示为
+$$\mathbb{S}=\{\boldsymbol{x}|\forall i,g^{(i)}(\boldsymbol{x})=0 \ \ {\rm and} \ \ \forall j,h^{(j)}(\boldsymbol{x})\leq 0\}\tag{47}$$
+其中，涉及$g^{(i)}$的等式称为等式约束，设计$h^{(j)}$的不等式称为不等式约束。<br />
+我们为每个约束引入新的变量$\lambda_i$和$\alpha_j$，这些新变量被称为KKT乘子。广义Lagrangian可以定义为
+$$L(\boldsymbol{x},\boldsymbol{\lambda},\boldsymbol{\alpha})=f(\boldsymbol{x})+\sum_i \lambda_ig^{(i)}(\boldsymbol{x})+\sum_j \alpha_jh^{(j)}(\boldsymbol{x})\tag{48}$$
+现在，我们可以通过优化无约束的广义Lagrangian解决约束最小化问题。只要存在至少一个可行点且$f(\boldsymbol{x})$不允许取$\infty$，那么
+$$\min_\boldsymbol{x}\max_{\boldsymbol{\lambda}}\max_{\boldsymbol{\alpha},\boldsymbol{\alpha} \ge 0}L(\boldsymbol{x},\boldsymbol{\lambda},\boldsymbol{\alpha})\tag{49}$$
+与如下函数有相同的最优目标函数值和最优点集$\boldsymbol{x}$：
+$$\min_{\boldsymbol{x} \in \mathbb{S}}f(\boldsymbol{x})\tag{50}$$
+我们可以使用一组简单的性质来描述约束优化问题的最优点。这些性质称为Karush-Kuhn-Tucker(KKT)条件。这些是确定一个点是最优点的必要条件，但不一定是充分条件。这些条件是：</p>
+<ul>
+<li>广义Lagrangian的梯度为零。</li>
+<li>所有关于$\boldsymbol{x}$和KKT乘子的约束都满足。</li>
+<li>不等式约束显示的“互补松弛性”：$\boldsymbol{\alpha} \odot \boldsymbol{h}(\boldsymbol{x})=0$</li>
+</ul>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: 'center'," +
+        "    displayIndent: '0em'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['$','$'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        " linebreaks: { automatic: true, width: '95% container' }, " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+        "    } " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+
+  </div><!-- /.entry-content -->
+  <!-- Pagination -->
+            <div class="pagination">
+              <a class="button previous" href="http://justbabm.github.io/MachineLearning/PRML/概述.html">
+             上一篇 —— 一、概述
+         </a>
+              <a href="http://justbabm.github.io/MachineLearning/PRML/机器学习基础.html" class="button next">下一篇 —— 三、机器学习基础</a>
+            </div>
+ 
+</div>
+</div>
+<!-- /#contentinfo -->
+</body>
+</html>

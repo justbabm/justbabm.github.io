@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>yutingL</title>
+        <meta charset="utf-8" />
+
+
+
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="/theme/js/ie/html5shiv.js"></script><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" href="/theme/css/ie8.css" /><![endif]-->
+</head>
+
+<body>
+        <header id="banner" class="body">
+                <h1><a href="http://justbabm.github.io/">yutingL <strong></strong></a></h1>
+        </header><!-- /#banner -->
+<!-- Sidebar -->
+            <div id="sidebar">
+
+                <!-- Logo -->
+                    <h1 id="logo"><a href="/">yutingL</a></h1>
+                    <!-- Text -->
+                    <section class="box text-style1">
+                        <div class="inner">
+                            <p>
+                                <strong>Talk is cheap, show me the code.</strong><br />
+                            </p>
+                        </div>
+                    </section>
+                <!-- Nav -->
+                    <nav id="nav">
+                        <ul>
+                            
+                            <li><a href="http://justbabm.github.io/MachineLearning/MachineLearningContent.html"">Machine learning</a></li>
+                            <li><a href="http://justbabm.github.io/DeepLearning/DeepLearningContent.html">Deep learning</a></li>
+			    <li><a href="http://justbabm.github.io/Info/Aboutme.html">About me</a></li>
+                        </ul>
+                    </nav>
+
+                <!-- Search -->
+                    <!-- <section class="box search">
+                        <form method="post" action="#">
+                            <input type="text" class="text" name="search" placeholder="Search" />
+                        </form>
+                    </section> -->
+
+                
+
+                <!-- Recent Posts -->
+                    <section class="box recent-posts">
+                        <header>
+                            <h2>Contact Me</h2>
+                        </header>
+                        <ul>
+                            <li><a class="icon fa-envelope" href="mailto:justbabm@gmail.com"> eMail</a></li>
+                            <!-- <li><a class="icon fa-twitter" href="#"> Twitter</a></li>
+                            <li><a class="icon fa-facebook" href="#"> Facebook</a></li>-->
+                            <li><a class="icon fa-github" href="https://github.com/justbabm/"> Github</a></li>
+                            
+                        </ul>
+                    </section>
+
+
+
+               <!-- Copyright -->
+                  <!--   <ul id="copyright">
+                        <li>Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.</li>
+                        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                        <li>Modified under a <a href="https://creativecommons.org/licenses/by/3.0/">CC:BY</a> license.</li>
+                    </ul>-->
+
+            </div><!-- /#menu -->
+<div id="content">
+<div class="inner">
+        <article class="box post post-excerpt">
+                <header> 
+                <h2><a href="http://justbabm.github.io/MachineLearning/PRML/机器学习基础.html" rel="bookmark" title="Permalink to 三、机器学习基础">三、机器学习基础</a></h2> 
+                <p>Author: yutingL &nbsp;&nbsp; Tags: Machine Learning/PRML</p>
+                </header>
+                <div class="info">
+                    <span class="date" datetime="2017-11-12T00:00:00+00:00"><span class="month">11月</span> <span class="day">12</span> <span class="month"> 2017</span></span>
+                    <ul class="stats">
+                                    <li><a href="mailto:justbabm@gamil.com?Subject=三、机器学习基础&Body=I%20saw%20this%20and%20thought%20of%20you!%20 http://justbabm.github.io/MachineLearning/PRML/机器学习基础.html" class="icon fa-envelope">&nbsp;</a></li>
+                                    <!--<li><a href="http://reddit.com/submit?url=http://justbabm.github.io/MachineLearning/PRML/机器学习基础.html&title=#三、机器学习基础"" class="icon fa-reddit">&nbsp;</a></li>
+                                    <li><a href="https://twitter.com/share?url=http://justbabm.github.io/MachineLearning/PRML/机器学习基础.html&text=&hashtags=GnotC" class="icon fa-twitter">&nbsp;</a></li>
+                                    <li><a href="https://www.facebook.com/sharer.php?u=http://justbabm.github.io/MachineLearning/PRML/机器学习基础.html" class="icon fa-facebook">&nbsp;</a></li>-->
+                                </ul>
+                </div><!-- /.post-info -->
+                <!--<div class="entry-content">&nbsp;</div>--><!-- /.entry-content -->
+        </article>
+    <style type="text/css">/*!
+*
+* IPython notebook
+*
+*/
+/* CSS font colors for translated ANSI colors. */
+.ansibold {
+  font-weight: bold;
+}
+/* use dark versions for foreground, to improve visibility */
+.ansiblack {
+  color: black;
+}
+.ansired {
+  color: darkred;
+}
+.ansigreen {
+  color: darkgreen;
+}
+.ansiyellow {
+  color: #c4a000;
+}
+.ansiblue {
+  color: darkblue;
+}
+.ansipurple {
+  color: darkviolet;
+}
+.ansicyan {
+  color: steelblue;
+}
+.ansigray {
+  color: gray;
+}
+/* and light for background, for the same reason */
+.ansibgblack {
+  background-color: black;
+}
+.ansibgred {
+  background-color: red;
+}
+.ansibggreen {
+  background-color: green;
+}
+.ansibgyellow {
+  background-color: yellow;
+}
+.ansibgblue {
+  background-color: blue;
+}
+.ansibgpurple {
+  background-color: magenta;
+}
+.ansibgcyan {
+  background-color: cyan;
+}
+.ansibggray {
+  background-color: gray;
+}
+div.cell {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-radius: 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  width: 100%;
+  padding: 5px;
+  /* This acts as a spacer between cells, that is outside the border */
+  margin: 0px;
+  outline: none;
+  border-left-width: 1px;
+  padding-left: 5px;
+  background: linear-gradient(to right, transparent -40px, transparent 1px, transparent 1px, transparent 100%);
+}
+div.cell.jupyter-soft-selected {
+  border-left-color: #90CAF9;
+  border-left-color: #E3F2FD;
+  border-left-width: 1px;
+  padding-left: 5px;
+  border-right-color: #E3F2FD;
+  border-right-width: 1px;
+  background: #E3F2FD;
+}
+@media print {
+  div.cell.jupyter-soft-selected {
+    border-color: transparent;
+  }
+}
+div.cell.selected {
+  border-color: #ababab;
+  border-left-width: 0px;
+  padding-left: 6px;
+  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 5px, transparent 5px, transparent 100%);
+}
+@media print {
+  div.cell.selected {
+    border-color: transparent;
+  }
+}
+div.cell.selected.jupyter-soft-selected {
+  border-left-width: 0;
+  padding-left: 6px;
+  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 7px, #E3F2FD 7px, #E3F2FD 100%);
+}
+.edit_mode div.cell.selected {
+  border-color: #66BB6A;
+  border-left-width: 0px;
+  padding-left: 6px;
+  background: linear-gradient(to right, #66BB6A -40px, #66BB6A 5px, transparent 5px, transparent 100%);
+}
+@media print {
+  .edit_mode div.cell.selected {
+    border-color: transparent;
+  }
+}
+.prompt {
+  /* This needs to be wide enough for 3 digit prompt numbers: In[100]: */
+  min-width: 14ex;
+  /* This padding is tuned to match the padding on the CodeMirror editor. */
+  padding: 0.4em;
+  margin: 0px;
+  font-family: monospace;
+  text-align: right;
+  /* This has to match that of the the CodeMirror class line-height below */
+  line-height: 1.21429em;
+  /* Don't highlight prompt number selection */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Use default cursor */
+  cursor: default;
+}
+@media (max-width: 540px) {
+  .prompt {
+    text-align: left;
+  }
+}
+div.inner_cell {
+  min-width: 0;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /* Old browsers */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  /* Modern browsers */
+  flex: 1;
+}
+/* input_area and input_prompt must match in top border and margin for alignment */
+div.input_area {
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
+  background: #f7f7f7;
+  line-height: 1.21429em;
+}
+/* This is needed so that empty prompt areas can collapse to zero height when there
+   is no content in the output_subarea and the prompt. The main purpose of this is
+   to make sure that empty JavaScript output_subareas have no height. */
+div.prompt:empty {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+div.unrecognized_cell {
+  padding: 5px 5px 5px 0px;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+div.unrecognized_cell .inner_cell {
+  border-radius: 2px;
+  padding: 5px;
+  font-weight: bold;
+  color: red;
+  border: 1px solid #cfcfcf;
+  background: #eaeaea;
+}
+div.unrecognized_cell .inner_cell a {
+  color: inherit;
+  text-decoration: none;
+}
+div.unrecognized_cell .inner_cell a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+@media (max-width: 540px) {
+  div.unrecognized_cell > div.prompt {
+    display: none;
+  }
+}
+div.code_cell {
+  /* avoid page breaking on code cells when printing */
+}
+@media print {
+  div.code_cell {
+    page-break-inside: avoid;
+  }
+}
+/* any special styling for code cells that are currently running goes here */
+div.input {
+  page-break-inside: avoid;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.input {
+    /* Old browsers */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: stretch;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    display: box;
+    box-orient: vertical;
+    box-align: stretch;
+    /* Modern browsers */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+/* input_area and input_prompt must match in top border and margin for alignment */
+div.input_prompt {
+  color: #303F9F;
+  border-top: 1px solid transparent;
+}
+div.input_area > div.highlight {
+  margin: 0.4em;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+}
+div.input_area > div.highlight > pre {
+  margin: 0px;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+}
+/* The following gets added to the <head> if it is detected that the user has a
+ * monospace font with inconsistent normal/bold/italic height.  See
+ * notebookmain.js.  Such fonts will have keywords vertically offset with
+ * respect to the rest of the text.  The user should select a better font.
+ * See: https://github.com/ipython/ipython/issues/1503
+ *
+ * .CodeMirror span {
+ *      vertical-align: bottom;
+ * }
+ */
+.CodeMirror {
+  line-height: 1.21429em;
+  /* Changed from 1em to our global default */
+  font-size: 14px;
+  height: auto;
+  /* Changed to auto to autogrow */
+  background: none;
+  /* Changed from white to allow our bg to show through */
+}
+.CodeMirror-scroll {
+  /*  The CodeMirror docs are a bit fuzzy on if overflow-y should be hidden or visible.*/
+  /*  We have found that if it is visible, vertical scrollbars appear with font size changes.*/
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.CodeMirror-lines {
+  /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
+  /* we have set a different line-height and want this to scale with that. */
+  padding: 0.4em;
+}
+.CodeMirror-linenumber {
+  padding: 0 8px 0 4px;
+}
+.CodeMirror-gutters {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.CodeMirror pre {
+  /* In CM3 this went to 4px from 0 in CM2. We need the 0 value because of how we size */
+  /* .CodeMirror-lines */
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+/*
+
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+Adapted from GitHub theme
+
+*/
+.highlight-base {
+  color: #000;
+}
+.highlight-variable {
+  color: #000;
+}
+.highlight-variable-2 {
+  color: #1a1a1a;
+}
+.highlight-variable-3 {
+  color: #333333;
+}
+.highlight-string {
+  color: #BA2121;
+}
+.highlight-comment {
+  color: #408080;
+  font-style: italic;
+}
+.highlight-number {
+  color: #080;
+}
+.highlight-atom {
+  color: #88F;
+}
+.highlight-keyword {
+  color: #008000;
+  font-weight: bold;
+}
+.highlight-builtin {
+  color: #008000;
+}
+.highlight-error {
+  color: #f00;
+}
+.highlight-operator {
+  color: #AA22FF;
+  font-weight: bold;
+}
+.highlight-meta {
+  color: #AA22FF;
+}
+/* previously not defined, copying from default codemirror */
+.highlight-def {
+  color: #00f;
+}
+.highlight-string-2 {
+  color: #f50;
+}
+.highlight-qualifier {
+  color: #555;
+}
+.highlight-bracket {
+  color: #997;
+}
+.highlight-tag {
+  color: #170;
+}
+.highlight-attribute {
+  color: #00c;
+}
+.highlight-header {
+  color: blue;
+}
+.highlight-quote {
+  color: #090;
+}
+.highlight-link {
+  color: #00c;
+}
+/* apply the same style to codemirror */
+.cm-s-ipython span.cm-keyword {
+  color: #008000;
+  font-weight: bold;
+}
+.cm-s-ipython span.cm-atom {
+  color: #88F;
+}
+.cm-s-ipython span.cm-number {
+  color: #080;
+}
+.cm-s-ipython span.cm-def {
+  color: #00f;
+}
+.cm-s-ipython span.cm-variable {
+  color: #000;
+}
+.cm-s-ipython span.cm-operator {
+  color: #AA22FF;
+  font-weight: bold;
+}
+.cm-s-ipython span.cm-variable-2 {
+  color: #1a1a1a;
+}
+.cm-s-ipython span.cm-variable-3 {
+  color: #333333;
+}
+.cm-s-ipython span.cm-comment {
+  color: #408080;
+  font-style: italic;
+}
+.cm-s-ipython span.cm-string {
+  color: #BA2121;
+}
+.cm-s-ipython span.cm-string-2 {
+  color: #f50;
+}
+.cm-s-ipython span.cm-meta {
+  color: #AA22FF;
+}
+.cm-s-ipython span.cm-qualifier {
+  color: #555;
+}
+.cm-s-ipython span.cm-builtin {
+  color: #008000;
+}
+.cm-s-ipython span.cm-bracket {
+  color: #997;
+}
+.cm-s-ipython span.cm-tag {
+  color: #170;
+}
+.cm-s-ipython span.cm-attribute {
+  color: #00c;
+}
+.cm-s-ipython span.cm-header {
+  color: blue;
+}
+.cm-s-ipython span.cm-quote {
+  color: #090;
+}
+.cm-s-ipython span.cm-link {
+  color: #00c;
+}
+.cm-s-ipython span.cm-error {
+  color: #f00;
+}
+.cm-s-ipython span.cm-tab {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAMCAYAAAAkuj5RAAAAAXNSR0IArs4c6QAAAGFJREFUSMft1LsRQFAQheHPowAKoACx3IgEKtaEHujDjORSgWTH/ZOdnZOcM/sgk/kFFWY0qV8foQwS4MKBCS3qR6ixBJvElOobYAtivseIE120FaowJPN75GMu8j/LfMwNjh4HUpwg4LUAAAAASUVORK5CYII=);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+div.output_wrapper {
+  /* this position must be relative to enable descendents to be absolute within it */
+  position: relative;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 1;
+}
+/* class for the output area when it should be height-limited */
+div.output_scroll {
+  /* ideally, this would be max-height, but FF barfs all over that */
+  height: 24em;
+  /* FF needs this *and the wrapper* to specify full width, or it will shrinkwrap */
+  width: 100%;
+  overflow: auto;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  display: block;
+}
+/* output div while it is collapsed */
+div.output_collapsed {
+  margin: 0px;
+  padding: 0px;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+div.out_prompt_overlay {
+  height: 100%;
+  padding: 0px 0.4em;
+  position: absolute;
+  border-radius: 2px;
+}
+div.out_prompt_overlay:hover {
+  /* use inner shadow to get border that is computed the same on WebKit/FF */
+  -webkit-box-shadow: inset 0 0 1px #000;
+  box-shadow: inset 0 0 1px #000;
+  background: rgba(240, 240, 240, 0.5);
+}
+div.output_prompt {
+  color: #D84315;
+}
+/* This class is the outer container of all output sections. */
+div.output_area {
+  padding: 0px;
+  page-break-inside: avoid;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+div.output_area .MathJax_Display {
+  text-align: left !important;
+}
+div.output_area 
+div.output_area 
+div.output_area img,
+div.output_area svg {
+  max-width: 100%;
+  height: auto;
+}
+div.output_area img.unconfined,
+div.output_area svg.unconfined {
+  max-width: none;
+}
+/* This is needed to protect the pre formating from global settings such
+   as that of bootstrap */
+.output {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.output_area {
+    /* Old browsers */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: stretch;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    display: box;
+    box-orient: vertical;
+    box-align: stretch;
+    /* Modern browsers */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+div.output_area pre {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  color: black;
+  background-color: transparent;
+  border-radius: 0;
+}
+/* This class is for the output subarea inside the output_area and after
+   the prompt div. */
+div.output_subarea {
+  overflow-x: auto;
+  padding: 0.4em;
+  /* Old browsers */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  /* Modern browsers */
+  flex: 1;
+  max-width: calc(100% - 14ex);
+}
+div.output_scroll div.output_subarea {
+  overflow-x: visible;
+}
+/* The rest of the output_* classes are for special styling of the different
+   output types */
+/* all text output has this class: */
+div.output_text {
+  text-align: left;
+  color: #000;
+  /* This has to match that of the the CodeMirror class line-height below */
+  line-height: 1.21429em;
+}
+/* stdout/stderr are 'text' as well as 'stream', but execute_result/error are *not* streams */
+div.output_stderr {
+  background: #fdd;
+  /* very light red background for stderr */
+}
+div.output_latex {
+  text-align: left;
+}
+/* Empty output_javascript divs should have no height */
+div.output_javascript:empty {
+  padding: 0;
+}
+.js-error {
+  color: darkred;
+}
+/* raw_input styles */
+div.raw_input_container {
+  line-height: 1.21429em;
+  padding-top: 5px;
+}
+pre.raw_input_prompt {
+  /* nothing needed here. */
+}
+input.raw_input {
+  font-family: monospace;
+  font-size: inherit;
+  color: inherit;
+  width: auto;
+  /* make sure input baseline aligns with prompt */
+  vertical-align: baseline;
+  /* padding + margin = 0.5em between prompt and cursor */
+  padding: 0em 0.25em;
+  margin: 0em 0.25em;
+}
+input.raw_input:focus {
+  box-shadow: none;
+}
+p.p-space {
+  margin-bottom: 10px;
+}
+div.output_unrecognized {
+  padding: 5px;
+  font-weight: bold;
+  color: red;
+}
+div.output_unrecognized a {
+  color: inherit;
+  text-decoration: none;
+}
+div.output_unrecognized a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.rendered_html {
+  color: #000;
+  /* any extras will just be numbers: */
+}
+
+
+
+.rendered_html :link {
+  text-decoration: underline;
+}
+.rendered_html :visited {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+.rendered_html h1:first-child {
+  margin-top: 0.538em;
+}
+.rendered_html h2:first-child {
+  margin-top: 0.636em;
+}
+.rendered_html h3:first-child {
+  margin-top: 0.777em;
+}
+.rendered_html h4:first-child {
+  margin-top: 1em;
+}
+.rendered_html h5:first-child {
+  margin-top: 1em;
+}
+.rendered_html h6:first-child {
+  margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+.rendered_html * + ul {
+  margin-top: 1em;
+}
+.rendered_html * + ol {
+  margin-top: 1em;
+}
+
+
+.rendered_html pre,
+
+
+
+.rendered_html tr,
+.rendered_html th,
+
+.rendered_html td,
+
+
+.rendered_html * + table {
+  margin-top: 1em;
+}
+
+.rendered_html * + p {
+  margin-top: 1em;
+}
+
+.rendered_html * + img {
+  margin-top: 1em;
+}
+.rendered_html img,
+
+.rendered_html img.unconfined,
+
+div.text_cell {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.text_cell > div.prompt {
+    display: none;
+  }
+}
+div.text_cell_render {
+  /*font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;*/
+  outline: none;
+  resize: none;
+  width: inherit;
+  border-style: none;
+  padding: 0.5em 0.5em 0.5em 0.4em;
+  color: #000;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+a.anchor-link:link {
+  text-decoration: none;
+  padding: 0px 20px;
+  visibility: hidden;
+}
+h1:hover .anchor-link,
+h2:hover .anchor-link,
+h3:hover .anchor-link,
+h4:hover .anchor-link,
+h5:hover .anchor-link,
+h6:hover .anchor-link {
+  visibility: visible;
+}
+.text_cell.rendered .input_area {
+  display: none;
+}
+.text_cell.rendered 
+.text_cell.unrendered .text_cell_render {
+  display: none;
+}
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.cm-header-1 {
+  font-size: 185.7%;
+}
+.cm-header-2 {
+  font-size: 157.1%;
+}
+.cm-header-3 {
+  font-size: 128.6%;
+}
+.cm-header-4 {
+  font-size: 110%;
+}
+.cm-header-5 {
+  font-size: 100%;
+  font-style: italic;
+}
+.cm-header-6 {
+  font-size: 100%;
+  font-style: italic;
+}
+</style>
+<style type="text/css">.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
+.highlight .c { color: #408080; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #B00040 } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .na { color: #7D9029 } /* Name.Attribute */
+.highlight .nb { color: #008000 } /* Name.Builtin */
+.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #0000FF } /* Name.Function */
+.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #19177C } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
+.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight .vc { color: #19177C } /* Name.Variable.Class */
+.highlight .vg { color: #19177C } /* Name.Variable.Global */
+.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style>
+<style type="text/css">
+/* Temporary definitions which will become obsolete with Notebook release 5.0 */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-bold { font-weight: bold; }
+</style>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>模式识别领域关注的是利用计算机算法自动发现数据中的规律，以及使用这些规律采取将数据分类等行动。<br />
+运行机器学习算法的结果可以被表示为一个函数$y(x)$，它以一个$x$作为输入，产生向量$y$。函数$y(x)$的精确形式在训练阶段被确定，这个阶段也叫学习阶段。一旦模型被训练出来，它就能确定新的$x$对应的$y$，这些新的$x$组成了测试集。正确分类与训练集不同的新样本的能力叫做泛化。在实际应用中，输入向量的变化性是相当大的，以至于训练数据只是所有可能的输入向量中相当小的一部分，所以泛化是模式识别的一个中心问题。对于大部分实际应用，原始输入向量通常被预处理，这个预处理阶段有时候被叫做特征抽取。<br />
+训练数据的样本包含输入向量以及对应的目标向量的应用叫做有监督学习问题。其中，给每个输入向量分配到有限数量离散标签中的一个，被成为分类问题；如果要求的输出由一个或者多个连续变量组成，那么这个任务被称为回归。在其他的模式识别问题中，训练数据由一组输入向量$x$组成，没有任何对应的目标值，被称为无监督学习问题。在无监督学习问题中，目标可能是发现数据中相似样本的分组，这被成为聚类；或者决定输入空间中数据的分布，这被成为密度估计；或者为了数据可视化，把数据从高维空间投影到二维或者三维空间。最后，反馈学习技术关注的问题是在给定的条件下，找到合适的动作，使得奖励达到最大值。</p>
+<h2 id="1-例子：多项式曲线拟合">1 例子：多项式曲线拟合<a class="anchor-link" href="#1-例子：多项式曲线拟合">¶</a></h2><p>我们以一个简单的回归任务开始。假设给定一个训练集，这个训练集由$x$的$N$次观测组成，写作$\mathbf{x} \equiv (x_1,...,x_N)^T$，伴随着对应的$t$的观测值，记作$\mathbf{t} \equiv (t_1,...,t_N)^T$。这些$x_n$均匀分布在区间$[0,1]$，目标数据集$\mathbf{t}$的获得方式是：首先计算函数${\rm sin}(2 \pi x)$的对应的值，然后给每个点增加一个小的符合高斯分布的随机噪声，从而得到对应的$t_n$的值。<br />
+现在，我们要用一种非正式的、简单的方式来进行曲线拟合。特别地，我们将使用下面形式的多项式函数来拟合数据：
+$$y(x,\boldsymbol{w})=w_0+w_1x+w_2x^2+...+w_Mx^M= \sum_{j=0}^M w_jx^j\tag{1}$$
+其中，$M$是多项式的阶数，$x^j$表示$x$的$j$次幂。多项式系数$w_0,...w_M$整体记作向量$\boldsymbol{w}$。
+系数的值可以通过调整多项式函数拟合训练数据的方式确定。这可以通过最小化误差函数的方法实现。误差函数衡量了对于任意给定的$\boldsymbol{w}$值，函数$y(x,\boldsymbol{w})$与训练集数据的差别。一个简单的应用广泛的误差函数是每个数据点$x_n$的预测值$y(x_n,\boldsymbol{w})$与目标值$t_n$的平方和。所以我们最小化$$E(\boldsymbol{w})=\frac{1}{2}\sum_{n=1}^N \{y(x_n,\boldsymbol{w})-t_n\}^2\tag{2}$$
+其中，因子$\frac{1}{2}$是为了后续运算方便而加入的。我们可以通过选择使得$E(\boldsymbol{w})$尽可能小的$\boldsymbol{w}$来解决曲线拟合问题。<br />
+若拟合的欠佳，会产生欠拟合问题，若数据点过于完美地被拟合，又会导致过拟合问题。经常用来控制过拟合现象的一种技术是正则化，这种技术涉及到给误差函数增加一个惩罚项，使得系数不会达到很大的值，这种惩罚函数最简单的形式是采用所有系数的平方和的形式。这推导出了误差函数的修改后的形式：
+$$\tilde{E}(\boldsymbol{w})=\frac{1}{2}\sum_{n=1}^N \{y(x_n,\boldsymbol{w})-t_n\}^2+\frac{\lambda}{2}\|\boldsymbol{w}\|^2\tag{3}$$</p>
+<h2 id="2-概率角度考察曲线拟合问题">2 概率角度考察曲线拟合问题<a class="anchor-link" href="#2-概率角度考察曲线拟合问题">¶</a></h2><p>我们已经看到，多项式曲线拟合的问题可以通过误差最小化问题来表示，这里我们从概率的角度来考察它，可以更深刻地认识误差函数和正则化，并且能够让我们完全从贝叶斯的角度来看待这个问题。<br />
+给定$x$的值，对应的$t$值服从高斯分布，分布的均值为$y(x,\boldsymbol{w})$，因此，我们有：
+$$p(t|x,\boldsymbol{w},\beta)=\mathcal{N}(t|y(x,\boldsymbol{w}),\beta^{-1})\tag{4}$$
+其中，我们定义了精度参数$\beta$，它对应与分布方差的倒数。<br />
+我们现在用训练数据$\{\mathbf{x},\mathbf{t}\}$，通过最大似然方法，来决定未知参数$\boldsymbol{w}$和$\beta$的值。如果数据假定从分布$(4)$中抽取，那么似然函数为：
+$$p(\mathbf{t}|\mathbf{x},\boldsymbol{w},\beta)=\prod_{n=1}^{N}\mathcal{N}(t_n|y(x_n,\boldsymbol{w}),\beta^{-1})\tag{5}$$
+用高斯分布的形式来替换，我们可以得到对数似然函数：
+$${\rm ln}p(\mathbf{t}|\mathbf{x},\boldsymbol{w},\beta)=-\frac{\beta}{2}\sum_{n=1}{N}\{y(x_n,\boldsymbol{w})-t_n\}^2+\frac{N}{2}{\rm ln}\beta-\frac{N}{2}{\rm ln}(2\pi)\tag{6}$$
+首先，考虑确定多项式系数的最大似然解，记作$\boldsymbol{w}_{ML}$，最大化似然函数等价于最小化平方和误差函数。因此，在高斯噪声的假设下，平方和误差函数是最大化似然函数的一个自然结果。<br />
+我们也可以使用最大似然方法来确定高斯条件分布的精度参数$\beta$。关于$\beta$来最大化函数，我们有：
+$$\frac{1}{\beta_{ML}}=\frac{1}{N}\sum_{n=1}{N}\{y(x_n,\boldsymbol{w}_{ML})-t_n\}^2\tag{7}$$
+预测分布通过把最大似然参数代入公式$(4)$给出：
+$$p(t|x,\boldsymbol{w}_{ML},\beta_{ML})=\mathcal{N}(t|y(x,\boldsymbol{w}_{ML}),\beta_{ML}^{-1})\tag{8}$$
+现在，让我们朝着贝叶斯的方向前进一步，引入在多项式系数$\boldsymbol{w}$上的先验分布。简单起见，我们考虑下面形式的高斯分布：
+$$p(\boldsymbol{w}|\alpha)=\mathcal{N}(\boldsymbol{w}|\boldsymbol{0},\alpha^{-1}\boldsymbol{I})=\frac{\alpha}{2\pi}^{\frac{M+1}{2}}{\rm exp}\{-\frac{\alpha}{2}\boldsymbol{w}^T\boldsymbol{w}\}\tag{9}$$
+使用贝叶斯定理，$\boldsymbol{w}$的后验概率正比于先验分布和似然函数的乘积：
+$$p(\boldsymbol{w}|\mathbf{x},\mathbf{t},\alpha,\beta) \propto p(\mathbf{t}|\mathbf{x},\boldsymbol{w},\beta)p(\boldsymbol{w}|\alpha)\tag{10}$$
+给定数据集，我们现在通过寻找最可能的$\boldsymbol{w}$来确定$\boldsymbol{w}$。这种技术被成为最大后验，简称MAP。取公式$(10)$的负对数，我们可以看到，最大化后验概率就是最小化下式：
+$$\frac{\beta}{2}\sum_{n=1}^{N}\{y(x_n,\boldsymbol{w})-t_n\}^2+\frac{\alpha}{2}\boldsymbol{w}^T\boldsymbol{w}\tag{11}$$
+因此，我们看到最大化后验概率等价于最小化正则化的平方和误差函数。</p>
+<h2 id="3-贝叶斯曲线拟合">3 贝叶斯曲线拟合<a class="anchor-link" href="#3-贝叶斯曲线拟合">¶</a></h2><p>在一个纯粹的贝叶斯方法中，我们应该自始至终地应用概率的加和规则和乘积规则，这需要对所有$\boldsymbol{w}$值进行积分，对于模式识别来说，这种积分是贝叶斯方法的核心。因此，预测分布可以写成下面的形式：
+$$p(t|x,\mathbf{x},\mathbf{t})=\int p(t|x,\boldsymbol{w})p(\boldsymbol{w}|\mathbf{x},\mathbf{t})\,d\boldsymbol{w}\tag{12}$$</p>
+<h2 id="4-模型选择">4 模型选择<a class="anchor-link" href="#4-模型选择">¶</a></h2><p>在实际应用中，我们可能会遇到多个可供选择的模型，我们希望依据这些可选的模型范围，找到对于特定应用最好的模型。<br />
+由于过拟合现象，以及数据有限的情况，我们可以引入交叉验证法。这种方法能够让可得到数据的$\frac{S-1}{S}$用于训练，同时使用所有的数据来评估表现。当数据相当稀疏的时候，考虑$S=N$的情况很合适，其中$N$是数据点的总数，这种技术叫做“留一法”。<br />
+交叉验证的一个主要的缺点是需要进行的训练的次数随着$S$而增加，这对于训练本身很耗时的问题来说是个大问题。对于像交叉验证这种使用分开的数据来评估模型表现的方法来说，还有一个问题：对于一个单一的模型，我们可能有多个复杂度参数（例如可能有若干个正则化参数）。在最坏的情况下，探索这些参数的组合所需的训练次数可能是参数个数的指数函数。很显然，我们需要一种更好的方法。理想情况下，模型的选择应该只依赖于训练数据，并且应该允许在一轮训练中对比多个超参数以及模型类型。因此我们需要找到一种模型表现的度量，它只依赖于训练数据，并且不会由于过拟合产生偏移的问题。<br />
+历史上各种各样的“信息准则”被提出来。这些“信息准则”尝试修正最大似然的偏差。修正的方法是增加一个惩罚项来补偿过于复杂的模型造成的过拟合。例如，赤池信息准则(AIC)，或者是这个量的一种变体，被称为贝叶斯信息准则(BIC)。</p>
+<h2 id="5-维度灾难">5 维度灾难<a class="anchor-link" href="#5-维度灾难">¶</a></h2><p>高维空间会给模式识别领域带来挑战，我们在三维空间中建立的几何直觉会在高维空间中不起作用，其产生的这种困难被称为维度灾难。<br />
+虽然维度灾难在模式识别应用中是一个重要的问题，但是它并不能阻止我们寻找应用于高维空间的有效技术。原因有两方面：一、真实的数据经常被限制在有着较低的有效维度的空间区域中，特别地，在目标值会发生重要变化的方向上也会有这种限制；二、真实数据通常比较光滑，因此大多数情况下，对于输入变量的微小改变，目标值的改变也很小，因此，对于新的输入变量，我们可以通过局部的类似于插值的技术来进行预测。</p>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: 'center'," +
+        "    displayIndent: '0em'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['$','$'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        " linebreaks: { automatic: true, width: '95% container' }, " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+        "    } " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+
+  </div><!-- /.entry-content -->
+  <!-- Pagination -->
+            <div class="pagination">
+              <a class="button previous" href="http://justbabm.github.io/MachineLearning/PRML/应用数学基础.html">
+             上一篇 —— 二、应用数学基础
+         </a>
+              <a href="http://justbabm.github.io/MachineLearning/PRML/非参数化方法.html" class="button next">下一篇 —— 四、非参数化方法</a>
+            </div>
+ 
+</div>
+</div>
+<!-- /#contentinfo -->
+</body>
+</html>
